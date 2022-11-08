@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            padding: 0 0;
+            margin: 0 0;
+        }
+        
+        .container {
+            display: flex;
+            background: linear-gradient(to right, rgb(8, 0, 83), rgb(121, 0, 111));
+            justify-content: space-between;
+            /*border: 1px solid orangered;*/
+            max-height: 75px;
+        }
+        
+        .container div:first-child {
+            font-size: 28px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: cursiv;
+            padding: 13px 0 5px 10px;
+            /*border: 1px solid orangered;*/
+        }
+        
+        .container ul {
+            /*border: 1px solid orangered;*/
+            height: 61px;
+            margin-right: 12px;
+        }
+        
+        .container ul li {
+            display: inline-block;
+            /*border: 1px solid orangered;*/
+            font-size: 14px;
+            padding: 10px 0;
+            height: 35px;
+        }
+        
+        .container ul li:not(first-child) {
+            margin: 0 20px;
+        }
+        
+        .container ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .container ul li a:hover {
+            color: rgb(219, 172, 213);
+        }
+        
+        .container ul li:hover {
+            border-bottom: 5px solid rgb(219, 172, 213);
+            cursor: pointer;
+            color: pink;
+        }
+        
+        .menu {
+            justify-self: right;
+            padding: 10px 0;
+            margin-right: 12px;
+            /*border: 1px solid orangered;*/
+        }
+        
+        .menu span {
+            display: block;
+            background: white;
+            width: 22px;
+            height: 2px
+        }
+        
+        .menu span:not(:first-child) {
+            margin-top: 4px;
+        }
+        
+        .menu span:hover {
+            background: rgb(219, 172, 213);
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width:700px) {
+            .container ul {
+                display: none;
+            }
+        }
+        
+        @media screen and (min-width:700px) {
+            .menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>Kaiz Investing</div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+        <a class="menu" href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</body>
+
+</html>

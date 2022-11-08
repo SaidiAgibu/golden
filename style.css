@@ -1,0 +1,84 @@
+:root{
+    --green:#11c011;
+    --red:#db0000;
+    --yello:yellow;
+    --black:#2c2b2b;
+}
+
+/* START:------Universal stylees---*/
+*{transition: .2s ease-in-out;}
+
+body{  
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+main{
+    padding:.5rem;
+}
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.5rem;
+}
+
+/* END:------Universal stylees---*/
+
+/* START:------Home section---*/
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background:linear-gradient(to right,var(--green),white);
+}
+
+#brandname span{
+    display:block;
+    align-items: center;
+}
+
+#brandname span:first-child{
+    font-family:cursive;
+    font-weight: bold;
+    color: rgb(134, 252, 134);
+    font-size:1.5rem;
+}
+
+#desktop-nav ul{
+    padding:.4rem;
+}
+#desktop-nav ul li{
+    display:inline-block;
+    list-style-type: none;
+    height:2.8rem;
+    text-align: center;
+}
+#desktop-nav ul li a{
+    text-decoration: none;
+    color:var(--black);
+}
+
+#desktop-nav ul li:not(first-child){
+    margin-left:1rem;
+}
+
+#desktop-nav ul li:hover{
+    box-sizing: border-box;
+    border-bottom: 5px solid var(--green);
+}
+
+
+#mobile-nav span{
+    width:1.5rem;
+    height:.2rem;
+    background:var(--black);
+    display:block;
+    margin-bottom: .1rem;
+}
+
+
+/* END:------Home section---*/
